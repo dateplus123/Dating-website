@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng" ng-app="IS219Gallery">
 <head>
 	<title>IS219 Gallery (Project 3)</title>
 
@@ -16,16 +16,16 @@
 	<!-- DO NOT CHANGE ANYTHING ABOVE THIS LINE-->
 
 	<!-- Angular (ADD HERE) -->
-
+		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
 	
 </head>
 
-  <body>
+  <body ng-controller="HomeController">
 	  
     <div class="header">
 	    
       <div class="container">
-        <h1 id="app_title">%title%</h1>
+        <h1 id="app_title">{{title}}</h1>
       </div>
       
     </div>

@@ -1,6 +1,6 @@
 app.controller('HomeController', ['$scope', function($scope) {
 	
-	
+	$scope.title="Hello World";
 	/* THESE ARE YOUR LIST OF MOVIES AND ACCOMPANYING METADATA
 	//	
 	// 	They are in the following format:
