@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IS219 Gallery (Project 3)</title>
+
+	<!-- Our CSS File along with Boostrap Styles, and FontAwesome Styles-->
+	<link rel="stylesheet" type='text/css' href="css/style.css"/>
+	<link rel="stylesheet" type='text/css' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type='text/css' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+
+
+	<!-- DO NOT CHANGE ANYTHING ABOVE THIS LINE-->
+
+	<!-- Angular (ADD HERE) -->
+
+	
+</head>
+
+  <body>
+	  
+    <div class="header">
+	    
+      <div class="container">
+        <h1 id="app_title">%title%</h1>
+      </div>
+      
+    </div>
+
+    <div class="main">
+      
+      <div class="container">
+
+        <div class="col-md-6"> 
+            <div class="thumbnail">
+
+					<img class="poster" />
+					<div class="imageInfo">%posterindex%</div>
+					
+					<p class="title">%title% (%country%)</p> 
+					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> %iscore% </p>
+					<p class="runtime">Runtime: %runtime%</p> 
+					<p class="released">Released: %released% | Rated: %rating%</p>
+					<p class="websites">Websites: <a>%imdb%</a> | <a>%website%</a></p>
+					
+		            <div class="social">
+		              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> %like%</p>
+		              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> %dislike%</p>
+		            </div>
+            </div> 
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+		<a id="github" class="btn btn-lg btn-warning">
+			<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i> %owner% %github%
+  		</a>
+      </div>
+    </div>
+
+  
+  	<!-- Modules -->
+	<script type="text/javascript" src="js/app.js"></script>
+	 
+	<!-- Controllers -->
+	<script type="text/javascript" src="js/controllers/HomeController.js"></script>
+	 
+	<!-- Services -->
+  
+</body>
+</html>
