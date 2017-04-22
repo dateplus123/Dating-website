@@ -113,6 +113,10 @@ app.controller('HomeController', ['$scope', function($scope) {
     
     $scope.movies[index].likes += 1 ;
   }
+
+  $scope.dislike = function(index){
+    $scope.movies[index].dislikes += 1 ;
+  }
 	
 	
 	
