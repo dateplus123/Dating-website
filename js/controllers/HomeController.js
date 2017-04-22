@@ -1,6 +1,6 @@
 app.controller('HomeController', ['$scope', function($scope) {
 	
-	$scope.title="Hello World";
+	
 	/* THESE ARE YOUR LIST OF MOVIES AND ACCOMPANYING METADATA
 	//	
 	// 	They are in the following format:
@@ -98,7 +98,9 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	/* ADD VARIABLES FOR STEP 3 HERE */
 	
-	
+	$scope.title="IMDB + Jean Paul's  Top 8 Movies";
+  $scope.owner="Jean Paul Gomez Galdos";
+  $scope.github="https://github.com/jean2040/s219s17GomezGaldos-P3"
 	
 	
 	
