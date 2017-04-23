@@ -37,7 +37,7 @@
         <div class="col-md-6" ng-repeat="movie in movies"> 
             <div class="thumbnail">
 
-					<img class="poster" src="{{movie.posters[movie.posterindex]}}" ng-click="posterClick($index)"/>
+					<img class="poster" src="{{ movie.posters[movie.posterindex] }}" ng-click="posterClick($index)"/>
 					<div class="imageInfo"> Poster {{ movie.posterindex + 1 }} of {{ movie.posters.length }}</div>
 					
 					<p class="title">{{ movie.title }} ( {{ movie.country }} )</p> 
@@ -58,8 +58,8 @@
 
     <div class="footer">
       <div class="container">
-		<a id="github" class="btn btn-lg btn-warning">
-			<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i> {{owner}} {{github}}
+		<a id="github" class="btn btn-lg btn-warning" ng-href="{{github}}">
+			<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i> {{owner}} {{github}} 
   		</a>
       </div>
     </div>
