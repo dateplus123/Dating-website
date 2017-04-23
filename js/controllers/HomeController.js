@@ -130,6 +130,14 @@ app.controller('HomeController', ['$scope', function($scope) {
     }
     
   }
+  $scope.timeText = function(minutes){
+    var hour = minutes / 60 ;
+    var minutes = minutes % 60 ;
+
+    $scope.stringTime = parseInt(hour) + "h" + " " + minutes + "min";
+
+
+  }
 	
 	
 	
