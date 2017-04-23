@@ -123,10 +123,10 @@ app.controller('HomeController', ['$scope', function($scope) {
     var currentIndex = $scope.movies[index].posterindex
     if ( currentIndex == totalLength - 1){
       $scope.movies[index].posterindex = 0;
-      console.log(currentIndex);
+      //console.log(currentIndex);
     }else{
     $scope.movies[index].posterindex += 1;
-     console.log(currentIndex);
+     //console.log(currentIndex);
     }
     
   }
