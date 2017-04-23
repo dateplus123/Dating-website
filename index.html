@@ -44,7 +44,7 @@
 					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{ movie.iscore }} </p>
 					<p class="runtime">Runtime: {{ movie.runtime | textTime }}</p> 
 					<p class="released">Released: {{ movie.released | date }} | Rated: {{ movie.rating }}</p>
-					<p class="websites">Websites: <a>{{ movie.imdb }}</a> | <a>{{ movie.website }}</a></p>
+					<p class="websites">Websites: <a ng-href="{{ movie.imdb }}">IMDB</a> | <a ng-href="{{ movie.website }}">Official</a></p>
 					
 		            <div class="social">
 		              <p class="likes" ng-click="like($index)"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{ movie.likes }}</p>
