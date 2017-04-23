@@ -88,6 +88,48 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
+	},
+  { 
+      title:	'The Fifth Element', 
+      iscore:	7.7,
+      rating:	'R',
+      runtime:	126,
+      released:	new Date('1997', '05', '9'),
+      country:	'USA',
+      posters:	['img/fifth_element1.jpg','img/fifth_element2.jpg','img/fifth_element3.jpg','img/fifth_element4.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0119116/',
+      website:	'https://www.facebook.com/TheFifthElementMovie',
+      likes:	750,
+      dislikes:	100,
+      posterindex: 0
+	},
+  { 
+      title:	'Indiana Jones and the Last Crusade', 
+      iscore:	8.3,
+      rating:	'R',
+      runtime:	127,
+      released:	new Date('1989', '05', '24'),
+      country:	'USA',
+      posters:	['img/indianajones1.jpg','img/indianajones2.jpg','img/indianajones3.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0097576',
+      website:	'http://lucasfilm.com/indiana-jones-and-the-last-crusade',
+      likes:	1500,
+      dislikes:	200,
+      posterindex: 0
+	},
+  { 
+      title:	'Taken', 
+      iscore:	7.8,
+      rating:	'R',
+      runtime:	153,
+      released:	new Date('2009', '01', '30'),
+      country:	'USA',
+      posters:	['img/taken1.jpg','img/taken2.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0936501/',
+      website:	'http://www.takenmovie.com/',
+      likes:	912,
+      dislikes:	121,
+      posterindex: 0
 	}
 	
 	
