@@ -41,7 +41,7 @@ app.controller('HomeController', ['$scope', function($scope) {
       released:	new Date('1972', '03', '24'),
       country:	'USA',
       posters:	['img/godfather.jpg','img/godfather_2.jpg','img/godfather_3.jpg'],
-      imdb:		'[http://www.imdb.com/title/tt0068646',
+      imdb:		'http://www.imdb.com/title/tt0068646/',
       website:	'https://www.facebook.com/thegodfather',
       likes:	928,
       dislikes:	109,
