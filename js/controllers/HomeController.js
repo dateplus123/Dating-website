@@ -18,122 +18,28 @@ app.controller('HomeController', ['$scope', function($scope) {
 	//
 	// FOR STEP 16, ADD THREE OF YOUR OWN FAVORITE MOVIES WITH METADATA TO THE END OF THIS LIST
 	*/
-	$scope.movies = [
-    { 
-      title:	'The Shawshank Redemption', 
-      iscore:	9.3,
-      rating:	'R',
-      runtime:	142,
-      released:	new Date('1994', '10', '14'),
-      country:	'USA',
-      posters:	['img/shawshank.jpg','img/shawshank2.jpg','img/shawshank3.jpg'],
-      imdb:		'http://www.imdb.com/title/tt0111161',
-      website:	'https://www.facebook.com/ShawshankRedemptionFilm',
-      likes:	1021,
-      dislikes:	122,
-      posterindex: 0
-	},
-    { 
-      title:	'The Godfather', 
-      iscore:	9.2,
-      rating:	'R',
-      runtime:	175,
-      released:	new Date('1972', '03', '24'),
-      country:	'USA',
-      posters:	['img/godfather.jpg','img/godfather_2.jpg','img/godfather_3.jpg'],
-      imdb:		'http://www.imdb.com/title/tt0068646/',
-      website:	'https://www.facebook.com/thegodfather',
-      likes:	928,
-      dislikes:	109,
-      posterindex: 0
-	},
-    { 
-      title:	'The Godfather: Part II', 
-      iscore:	9.0,
-      rating:	'R',
-      runtime:	202,
-      released:	new Date('1974', '12', '20'),
-      country:	'USA',
-      posters:	['img/godfather2.jpg','img/godfather2_2.jpg'],
-      imdb:		'http://www.imdb.com/title/tt0071562',
-      website:	'https://www.facebook.com/thegodfather',
-      likes:	855,
-      dislikes:	99,
-      posterindex: 0
-	},
-    { 
-      title:	'The Dark Knight', 
-      iscore:	8.9,
-      rating:	'PG-13',
-      runtime:	152,
-      released:	new Date('2008', '07', '18'),
-      country:	'USA',
-      posters:	['img/darkknight.jpg','img/darkknight2.jpg'],
-      imdb:		'http://www.imdb.com/title/tt0468569',
-      website:	'http://www.42entertainment.com/work/whysoserious',
-      likes:	828,
-      dislikes:	127,
-      posterindex: 0
-	},
-    { 
-      title:	'Schindler\'s List', 
-      iscore:	8.9,
-      rating:	'R',
-      runtime:	195,
-      released:	new Date('1993', '11', '30'),
-      country:	'USA',
-      posters:	['img/schindlerslist.jpg'],
-      imdb:		'http://www.imdb.com/title/tt0108052',
-      website:	'https://www.uphe.com/schindlers-list',
-      likes:	812,
-      dislikes:	101,
-      posterindex: 0
-	},
-  { 
-      title:	'The Fifth Element', 
-      iscore:	7.7,
-      rating:	'R',
-      runtime:	126,
-      released:	new Date('1997', '05', '9'),
-      country:	'USA',
-      posters:	['img/fifth_element1.jpg','img/fifth_element2.jpg','img/fifth_element3.jpg','img/fifth_element4.jpg'],
-      imdb:		'http://www.imdb.com/title/tt0119116/',
-      website:	'https://www.facebook.com/TheFifthElementMovie',
-      likes:	750,
-      dislikes:	100,
-      posterindex: 0
-	},
-  { 
-      title:	'Indiana Jones and the Last Crusade', 
-      iscore:	8.3,
-      rating:	'R',
-      runtime:	127,
-      released:	new Date('1989', '05', '24'),
-      country:	'USA',
-      posters:	['img/indianajones1.jpg','img/indianajones2.jpg','img/indianajones3.jpg'],
-      imdb:		'http://www.imdb.com/title/tt0097576',
-      website:	'http://lucasfilm.com/indiana-jones-and-the-last-crusade',
-      likes:	1500,
-      dislikes:	200,
-      posterindex: 0
-	},
-  { 
-      title:	'Taken', 
-      iscore:	7.8,
-      rating:	'R',
-      runtime:	153,
-      released:	new Date('2009', '01', '30'),
-      country:	'USA',
-      posters:	['img/taken1.jpg','img/taken2.jpg'],
-      imdb:		'http://www.imdb.com/title/tt0936501/',
-      website:	'http://www.takenmovie.com/',
-      likes:	912,
-      dislikes:	121,
-      posterindex: 0
-	}
-	
-	
+
+  $scope.people = [
+    {
+      name: 'Bulma',
+      age: '25',
+      city:  'nj',
+      interest: 'gaming',
+      joined: new Date('1994', '10', '14'),
+      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photoindex: 0
+    },
+    {
+      name: 'Videl',
+      age: '20',
+      city:  'ny',
+      interest: 'fights',
+      joined: new Date('1994', '10', '14'),
+      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photoindex: 0
+    }
   ];
+	
 	
 	
 
