@@ -34,6 +34,28 @@
       
       <div class="container">
 
+				
+
+								<div class="card hovercard col-md-6" ng-repeat="person in people">
+									
+									<img src="{{ person.photos[person.photoindex] }}" alt=""/>
+									<div class="avatar">
+											<img src="http://placehold.it/80X80/333333/&text=Meet" alt="" />
+									</div>
+									<div class="info">
+											<div class="title">
+												{{person.name}}
+											</div>
+											<div class="desc">City: {{person.city | uppercase }}</div>
+											<div class="desc">Age: {{person.age}}</div>
+											
+									</div>
+									<div class="bottom">
+											<button class="btn btn-default">Meet</button>
+									</div>
+								</div>
+							
+<!--
         <div class="col-md-6" ng-repeat="movie in movies"> 
             <div class="thumbnail">
 
@@ -52,7 +74,7 @@
 		            </div>
             </div> 
         </div>
-
+-->
       </div>
     </div>
 
