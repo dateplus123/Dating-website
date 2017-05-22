@@ -21,8 +21,7 @@
 .card.hovercard {
   position: relative;
   padding-top: 0;
-  margin-left: 5px;
-    margin-right: 5px;
+  
   overflow: hidden;
   text-align: center;
   background-color: #fff;
@@ -38,7 +37,7 @@
   top: -40px;
   margin-bottom: -40px;
 }
-
+/* CIRCLE button */
 .card.hovercard .avatar img {
   width: 80px;
   height: 80px;
