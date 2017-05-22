@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<title>Signin Template for Dating website</title>
+	<link href="https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans" rel="stylesheet">
+	<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+	<!-- <script type='text/javascript' src='https://cdn.firebase.com/js/simple-login/1.6.1/firebase-simple-login.js'></script> -->
+    <!--<script src="//connect.facebook.net/en_US/sdk.js"></script>-->
+	<!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+
+   
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+
+  </head>
+
+  <body>
+  
+  <!--<div id="fb-root"></div>-->
+  
+  <div>Building a dating website</div>
+  
+  
+    <div class="container">
+	
+
+      <div class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+		
+        <button id="btnSignin" class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
+		<button id="btnSignup" class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+		<button id="btnLogout" class="btn btn-lg btn-primary btn-block btn-action hide" type="submit">Log out</button>
+		<!--<a href="#" id="btnfb-login" class="btn btn-lg btn-primary btn-block"  type="submit" >Facebook Login-->
+		<!--<a id="btnSignin"  class="btn btn-lg btn-primary btn-block" href="#">Login Anonymously</a>-->
+		<button id="btnfblogin" class="btn btn-lg btn-primary btn-block"  scope="public_profile,email" type="submit">Facebook login</button>
+        
+		<!---<div id="message">
+		<h1>Anonymous Login</h1>
+		<h4><p>I know you're there, I just don't know who you are.</h4></p>
+		<ul>
+		   
+		<a id="btnSignin"  class="btn btn-lg btn-primary btn-block" href="#">Login Anonymously</a>
+		   
+		    
+		</ul>
+		</div>--->
+			
+    </div> <script src="web.js"></script>
+	<script src="face.js"></script>
+  </body>
+</html>
