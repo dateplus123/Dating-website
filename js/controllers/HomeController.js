@@ -37,6 +37,78 @@ app.controller('HomeController', ['$scope', function($scope) {
       joined: new Date('1994', '10', '14'),
       photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
       photoindex: 0
+    },
+    {
+      name: 'Videl',
+      age: '20',
+      city:  'ny',
+      interest: 'fights',
+      joined: new Date('1994', '10', '14'),
+      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photoindex: 0
+    },
+    {
+      name: 'Videl',
+      age: '20',
+      city:  'ny',
+      interest: 'fights',
+      joined: new Date('1994', '10', '14'),
+      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photoindex: 0
+    },
+    {
+      name: 'Videl',
+      age: '20',
+      city:  'ny',
+      interest: 'fights',
+      joined: new Date('1994', '10', '14'),
+      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photoindex: 0
+    },
+    {
+      name: 'Videl',
+      age: '20',
+      city:  'ny',
+      interest: 'fights',
+      joined: new Date('1994', '10', '14'),
+      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photoindex: 0
+    },
+    {
+      name: 'Videl',
+      age: '20',
+      city:  'ny',
+      interest: 'fights',
+      joined: new Date('1994', '10', '14'),
+      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photoindex: 0
+    },
+    {
+      name: 'Videl',
+      age: '20',
+      city:  'ny',
+      interest: 'fights',
+      joined: new Date('1994', '10', '14'),
+      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photoindex: 0
+    },
+    {
+      name: 'Videl',
+      age: '20',
+      city:  'ny',
+      interest: 'fights',
+      joined: new Date('1994', '10', '14'),
+      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photoindex: 0
+    },
+    {
+      name: 'Videl',
+      age: '20',
+      city:  'ny',
+      interest: 'fights',
+      joined: new Date('1994', '10', '14'),
+      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photoindex: 0
     }
   ];
 	
