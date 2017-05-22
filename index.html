@@ -11,6 +11,7 @@
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 
 	<!-- DO NOT CHANGE ANYTHING ABOVE THIS LINE-->
@@ -63,7 +64,32 @@
                     </div>
                 </div>
             </div>
+			<!-- FILTERS -->
+			<div class="panel panel-primary">
+				<div class="panel-heading">Filter by: </div>
+			<div class="list-group">
+			
+			<a href="#gender" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">Gender</a>
+				<div class="collapse list-group-submenu" id="gender">
+					<a href="#" class="list-group-item"><input type="checkbox"> Male </a>
+					<a href="#" class="list-group-item"><input type="checkbox"> Female </a>
+					<a href="#" class="list-group-item"><input type="checkbox"> Any </a>
+				</div>
+	
+			<a href="#city" class="list-group-item" data-toggle="collapse">City</a>
+			 	<div class="collapse list-group-submenu" id="city">
+					<a href="#" class="list-group-item"><input type="checkbox"> New Jersey </a>
+					<a href="#" class="list-group-item"><input type="checkbox"> New York </a>
+					<a href="#" class="list-group-item"><input type="checkbox"> Pensylvania </a>
+					<a href="#" class="list-group-item"><input type="checkbox"> Conneticut </a>
+				</div>
+			<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+			<a href="#" class="list-group-item">Vestibulum at eros</a>
+			</div>
+			</div>
+			<!-- FILTERS END -->
         </div>
+		
 				<!--LEFT PANEL -->	
 				<!--RIGTH PANEL -->
 				<div class="col-lg-9 col-md-9 col-sm-12 col-xm-12">
