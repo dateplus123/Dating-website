@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="eng" ng-app="IS219Gallery">
 <head>
-	<title>IS219 Gallery (Project 3)</title>
+	<title>Dating 123</title>
 
 	<!-- Our CSS File along with Boostrap Styles, and FontAwesome Styles-->
 	<link rel="stylesheet" type='text/css' href="css/style.css"/>
-	<link rel="stylesheet" type='text/css' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type='text/css' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	
 	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
 	<!-- DO NOT CHANGE ANYTHING ABOVE THIS LINE-->
@@ -22,22 +22,86 @@
 </head>
 
   <body ng-controller="HomeController">
-	  
-    <div class="navbar navbar-inverse">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
-									class="icon-bar"></span><span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="./ORqmj" style="margin-right:-8px; margin-top:-5px;">
-							<img alt="Brand" src="https://lut.im/7trApsDX08/GeilMRp1FIm4f2p7.png" width="30px" height="30px">
-					</a>
-					<a class="navbar-brand" href="./ORqmj">Project*</a>
-					<i class="brand_network"><small><small>diaspora* Network</small></small></i>
-     </div>
-
-    
+	 <!-- NAAVIGATION BAR -->
+	<div class="row"> 
+    <div class="navbar-wrapper">
+            <div class="container-fluid">
+                <div class="navbar navbar-default navbar-static-top" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                                    class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="./ORqmj" style="margin-right:-8px; margin-top:-5px;">
+                                <img alt="Brand" src="https://lut.im/7trApsDX08/GeilMRp1FIm4f2p7.png" width="30px" height="30px">
+                            </a>
+                            <a class="navbar-brand" href="./ORqmj">Dating123</a>
+                            <i class="brand_network"><small><small>a Dating Site</small></small></i>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="./ORqmj">Stream</a></li>
+                                <li><a href="#">My Activity</a></li>
+                                <li><span class="badge badge-important">2</span><a href="#"><i class="fa fa-bell-o fa-lg" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="user-avatar pull-left" style="margin-right:8px; margin-top:-5px;">
+                                        <img src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" class="img-responsive img-circle" title="John Doe" alt="John Doe" width="30px" height="30px">
+                                    </span>
+                                    <span class="user-name">
+                                        John Doe
+                                    </span>
+                                    <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="navbar-content">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <img src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" alt="Alternate Text" class="img-responsive" width="120px" height="120px" />
+                                                        <p class="text-center small">
+                                                            <a href="./3X6zm">Change Photo</a></p>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <span>John Doe</span>
+                                                        <p class="text-muted small">
+                                                            example@pods.tld</p>
+                                                        <div class="divider">
+                                                        </div>
+                                                        <a href="./56ExR" class="btn btn-default btn-xs"><i class="fa fa-user-o" aria-hidden="true"></i> Profile</a>
+                                                        <a href="#" class="btn btn-default btn-xs"><i class="fa fa-address-card-o" aria-hidden="true"></i> Contacts</a>
+                                                        <a href="#" class="btn btn-default btn-xs"><i class="fa fa-cogs" aria-hidden="true"></i> Settings</a>
+                                                        <a href="#" class="btn btn-default btn-xs"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Help!</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="navbar-footer">
+                                                <div class="navbar-footer-content">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <a href="#" class="btn btn-default btn-sm"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Change Passowrd</a>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <a href="#" class="btn btn-default btn-sm pull-right"><i class="fa fa-power-off" aria-hidden="true"></i> Sign Out</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+    <!-- END NAAVIGATION BAR -->
       
-    <div class="container">
+    <div class="container" style="padding-top:60px;">
 			<div class="row">
 			<!--LEFT PANEL -->
 			<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
@@ -108,13 +172,20 @@
 											
 									</div>
 									<div class="bottom">
-											<button class="btn btn-default">Meet</button>
+											<button class="btn btn-default" data-toggle="modal" data-target="#userModal">Meet</button>
 									</div>
 								</div>
 							
+					
+
 				</div>
+
+						
+
       </div>
     </div>
+
+
     
 
     <div class="footer">
@@ -123,6 +194,74 @@
       </div>
     </div>
 
+	<!-- Modal -->
+						<div id="userModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								
+								        
+    
+												<!-- Contenedor -->
+											
+											<img class="modal-image" alt="userimg" src="http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png">
+											
+																						
+											<div class="username">
+												<h2>Bulma  <small><i class="fa fa-map-marker"></i> Earth (Capsule)</small></h2>
+												<p><i class="fa fa-briefcase"></i> Inventor.</p>
+												
+												<a href="#"  class="btn-o"> <i class="fa fa-user-plus"></i> Add Friend </a>
+												<a href="#"  class="btn-o"> <i class="fa fa-plus"></i> Follow </a>
+											</div>
+												
+											
+
+
+
+
+							</div>
+							<div class="modal-body">
+								
+
+											<div class="panel panel-primary">
+												<div class="panel-heading">Info </div>
+											<div class="list-group">
+											
+											<a href="#about" class="list-group-item" data-toggle="collapse">About</a>
+												<div class="collapse list-group-submenu" id="about">
+													<a href="#"><i class="fa fa-calendar left-none"></i> Date of Birth : 03/09/1994</a>
+													<a href="#">Address : INDIA,Punjab</a>
+													<a href="mailto:gurdeepjawaddi94@gmail.com">Email : gurdeepjawaddi94@gmail.com</a>
+													<a href="#">Phone : +91 85680-79956</a>
+													
+												</div>
+									
+											<a href="#interest" class="list-group-item" data-toggle="collapse">Interests</a>
+												<div class="collapse list-group-submenu" id="interest">
+													<ul class="submenu">
+													<li><a href="#"><span class="tags">Adobe Photoshop</span> <span class="tags">Corel Draw</span> <span class="tags">CSS</span> <span class="tags">Css 3</span> 
+													<span class="tags">Graphic Design</span> <span class="tags">HTML</span> <span class="tags">HTML5</span> <span class="tags">JavaScript</span> 
+													<span class="tags">Twitter bootstrap</span> <span class="tags">bootstrap</span> <span class="tags">User Interface Design</span> <span class="tags">Wordpress</span></li></a>
+													</ul>
+												</div>
+											<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+											<a href="#" class="list-group-item">Vestibulum at eros</a>
+											</div>
+											</div>
+
+
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+							</div>
+
+						</div>
+						</div>
   
   	<!-- Modules -->
 	<script type="text/javascript" src="js/app.js"></script>
@@ -132,5 +271,7 @@
 	 
 	<!-- Services -->
   
+
+
 </body>
 </html>
