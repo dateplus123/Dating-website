@@ -35,79 +35,79 @@ app.controller('HomeController', ['$scope', function($scope) {
       city:  'ny',
       interest: 'fights',
       joined: new Date('1994', '10', '14'),
-      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photos: ['http://img15.deviantart.net/64f5/i/2016/118/7/d/videl__budokai_3__by_rayzorblade189-d88fxar.png'],
       photoindex: 0
     },
     {
-      name: 'Videl',
+      name: 'trunks',
       age: '20',
       city:  'ny',
       interest: 'fights',
       joined: new Date('1994', '10', '14'),
-      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photos: ['http://pre15.deviantart.net/fd47/th/pre/i/2016/118/c/0/super_saiyan_future_trunks__budokai_3__by_rayzorblade189-d86qaff.png'],
       photoindex: 0
     },
     {
-      name: 'Videl',
+      name: 'Gohan',
       age: '20',
       city:  'ny',
       interest: 'fights',
       joined: new Date('1994', '10', '14'),
-      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photos: ['http://pre01.deviantart.net/bf39/th/pre/i/2015/024/7/4/ultimate_gohan__xenoverse__alt_palette__2_by_rayzorblade189-d8f7cch.png'],
       photoindex: 0
     },
     {
-      name: 'Videl',
+      name: 'Vegeta',
       age: '20',
       city:  'ny',
       interest: 'fights',
       joined: new Date('1994', '10', '14'),
-      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photos: ['http://pre12.deviantart.net/d146/th/pre/i/2015/283/2/4/ssgss_vegeta_arms_crossed_by_eymsmiley-d9c2dob.png'],
       photoindex: 0
     },
     {
-      name: 'Videl',
+      name: 'Naruto',
       age: '20',
       city:  'ny',
       interest: 'fights',
       joined: new Date('1994', '10', '14'),
-      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photos: ['http://vignette4.wikia.nocookie.net/naruto/images/0/09/Naruto_newshot.png/revision/latest?cb=20150817151803'],
       photoindex: 0
     },
     {
-      name: 'Videl',
+      name: 'Kakashi',
       age: '20',
       city:  'ny',
       interest: 'fights',
       joined: new Date('1994', '10', '14'),
-      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photos: ['http://images.techtimes.com/data/images/full/262265/kakashinarutounmasked.jpg'],
       photoindex: 0
     },
     {
-      name: 'Videl',
+      name: 'Captain America',
       age: '20',
       city:  'ny',
       interest: 'fights',
       joined: new Date('1994', '10', '14'),
-      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photos: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSItgWYkgy6rsawGZrNhZYRWNMsYJj9reZxubcPduA0OQGaqOyY_g'],
       photoindex: 0
     },
     {
-      name: 'Videl',
+      name: 'Spiderman',
       age: '20',
       city:  'ny',
       interest: 'fights',
       joined: new Date('1994', '10', '14'),
-      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photos: ['http://i.annihil.us/u/prod/marvel/i/mg/2/00/53710b14a320b.png'],
       photoindex: 0
     },
     {
-      name: 'Videl',
+      name: 'Jean Grey',
       age: '20',
       city:  'ny',
       interest: 'fights',
       joined: new Date('1994', '10', '14'),
-      photos: ['http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png'],
+      photos: ['https://vignette3.wikia.nocookie.net/marveldatabase/images/2/22/Jean_Grey_%28Earth-13729%29.jpg/revision/latest?cb=20140411025424'],
       photoindex: 0
     }
   ];
