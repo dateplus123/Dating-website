@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng" ng-app="IS219Gallery">
+<html lang="eng" ng-app='dateSite'>
 <head>
 	<title>Dating 123</title>
 
@@ -19,287 +19,114 @@
 
 	<!-- Angular (ADD HERE) -->
 		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+
 	
 </head>
 
-  <body ng-controller="HomeController">
+  <body>
 	 <!-- NAAVIGATION BAR -->
-	<div class="row"> 
-    <div class="navbar-wrapper">
-            <div class="container-fluid">
-                <div class="navbar navbar-default navbar-static-top" role="navigation">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
-                                    class="icon-bar"></span><span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="./ORqmj" style="margin-right:-8px; margin-top:-5px;">
-                                <img alt="Brand" src="https://lut.im/7trApsDX08/GeilMRp1FIm4f2p7.png" width="30px" height="30px">
-                            </a>
-                            <a class="navbar-brand" href="./ORqmj">Dating123</a>
-                            <i class="brand_network"><small><small>A Dating Site</small></small></i>
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li><a href="#">My Profile</a></li>
-                                <li><a href="#">My Activity</a></li>
-                                <li><a href="#">Search People</a></li>
-                                <li><span class="badge badge-important">2</span><a href="#"><i class="fa fa-bell-o fa-lg" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a></li>
-                            </ul>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <span class="user-avatar pull-left" style="margin-right:8px; margin-top:-5px;">
-                                        <img src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" class="img-responsive img-circle" title="John Doe" alt="John Doe" width="30px" height="30px">
-                                    </span>
-                                    <span class="user-name">
-                                        John Doe
-                                    </span>
-                                    <b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <div class="navbar-content">
-                                                <div class="row">
-                                                    <div class="col-md-5">
-                                                        <img src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" alt="Alternate Text" class="img-responsive" width="120px" height="120px" />
-                                                        <p class="text-center small">
-                                                            <a href="./3X6zm">Change Photo</a></p>
-                                                    </div>
-                                                    <div class="col-md-7">
-                                                        <span>John Doe</span>
-                                                        <p class="text-muted small">
-                                                            example@pods.tld</p>
-                                                        <div class="divider">
-                                                        </div>
-                                                        <a href="./56ExR" class="btn btn-default btn-xs"><i class="fa fa-user-o" aria-hidden="true"></i> Profile</a>
-                                                        <a href="#" class="btn btn-default btn-xs"><i class="fa fa-address-card-o" aria-hidden="true"></i> Contacts</a>
-                                                        <a href="#" class="btn btn-default btn-xs"><i class="fa fa-cogs" aria-hidden="true"></i> Settings</a>
-                                                        <a href="#" class="btn btn-default btn-xs"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Help!</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="navbar-footer">
-                                                <div class="navbar-footer-content">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <a href="#" class="btn btn-default btn-sm"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Change Passowrd</a>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <a href="#" class="btn btn-default btn-sm pull-right"><i class="fa fa-power-off" aria-hidden="true"></i> Sign Out</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-	</div>
+
+	<nav-bar></nav-bar>
+
+    <div ng-view=""></div>
+
     <!-- END NAAVIGATION BAR -->
-<div id="content-box" class = "jumbotron">
-   
-   <div class = "container">
-      <h1>Welcome to Dating 123</h1>
-      <p>This is an example.</p>
-      
-      <p>
-          <a class="btn btn-primary btn-lg btn-custom" href="#" role="button"><i class="fa fa-facebook"></i>sign up via facebook</a>
-         <a class="btn color-3 btn-primary btn-lg btn-custom" role="button"><i class="fa fa-lock"></i>sign up now</a>
-      </p>
-   </div>
-   
-</div>
-<div id="content-box">      
-<div class="container-fluid custom-container">
-<div class="row">
-			<!--LEFT PANEL -->
-			<div class="col-md-2">
-
-                <div class="panel panel-primary">
-				<div class="panel-heading">Filter by: </div>
-                
-                    <div class="list-group">
-                    
-                    <a href="#gender" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">Gender</a>
-                        <div class="collapse list-group-submenu" id="gender">
-                            <a href="#" class="list-group-item"><input type="checkbox"> Male </a>
-                            <a href="#" class="list-group-item"><input type="checkbox"> Female </a>
-                            <a href="#" class="list-group-item"><input type="checkbox"> Any </a>
-                        </div>
-            
-                    <a href="#city" class="list-group-item" data-toggle="collapse">City</a>
-                        <div class="collapse list-group-submenu" id="city">
-                            <a href="#" class="list-group-item"><input type="checkbox"> New Jersey </a>
-                            <a href="#" class="list-group-item"><input type="checkbox"> New York </a>
-                            <a href="#" class="list-group-item"><input type="checkbox"> Pensylvania </a>
-                            <a href="#" class="list-group-item"><input type="checkbox"> Conneticut </a>
-                        </div>
-                    <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                    <a href="#" class="list-group-item">Vestibulum at eros</a>
-                    </div>
-			</div>
-
-			<div class="menu-left">
-			<h3 class="menu-title">
-			Popular Creative Filds
-			</h3>
-			<div class="list-group">
-			
-			<a href="#" data-filter=".category-1" class="list-group-item">Graphic Design </a>
-			<a href="#" data-filter=".category-2" class="list-group-item">Photography </a>
-			<a href="#" data-filter=".category-3" class="list-group-item">Interaction Design </a>
-			<a href="#" data-filter=".category-4" class="list-group-item">Art Direction </a>
-			<a href="#" data-filter=".category-5" class="list-group-item">Illustration </a>
-			
-			</div>
-			</div>
-			<div class="menu-left">
-			<h3 class="menu-title">
-			Popular Tags
-			</h3>
-			<div class="tags_block clearfix">
-			<ul>
-			<li><a data-filter=".category-6" class="filter">Movie</a></li>
-			<li><a data-filter=".category-1" class="filter">Music</a></li>
-			<li><a data-filter=".category-2" class="filter">Club</a></li>
-			<li><a data-filter=".category-3" class="filter">Professional</a></li>
-			<li><a data-filter=".category-4" class="filter">logo</a></li>
-			<li><a data-filter=".category-5" class="filter">identity</a></li>
-			<li><a data-filter=".category-6" class="filter">logo design</a></li>
-			<li><a data-filter=".category-1" class="filter">interactive</a></li>
-			<li><a data-filter=".category-2" class="filter">Introvert</a></li>
-			<li><a data-filter=".category-3" class="filter">Anime</a></li>
-			</ul>
-			</div>
-			</div>
-			
-			</div>
-		
-					
-				<!--RIGTH PANEL -->
-				
-    <div class="col-md-10">
-        <div class="row">
-            <!-- PERSON BOX -->
-            <div class=" user-column col-lg-3 col-md-4 col-xs-12 "  ng-repeat="person in people">
-                <div class="user-box style-2">
-                <a class="ava-user style-2" href="#">
-                <img data-toggle="modal" data-target="#userModal" src="{{ person.photos[person.photoindex] }}" alt=""/>
-                </a>
-                    <div class="user-counter">
-
-                    <div class="c_text">{{person.city}}</div>
-                    </div>
-                <a href="#" class="user-name" data-toggle="modal" data-target="#userModal">{{person.name}}</a>
-                <p class="user-info">Singapore, Singapore</p>
-                    <div class="text-tags">
-                    <a href="#">Graphic Design</a>,
-                    <a href="#">Branding,</a>
-                    <a href="#">Typography</a>
-                    </div>
-                <div class="info-box">
-                <span><i class="fa fa-thumbs-o-up"></i> 360</span>
-                <span><i class="fa fa-eye"></i> 789</span>
-                </div>
-                <a class="btn btn-primary">Follow</a>
-
-                </div>
-            </div>
-        <!-- END PERSON BOX -->
-
-        </div>
+    <div id="content-box" class = "jumbotron">
+    
+    <div class = "container">
+        <h1>Welcome to Dating 123</h1>
+        <p>This is an example.</p>
+        
+        <p>
+            <a class="btn btn-primary btn-lg btn-custom" href="#" role="button"><i class="fa fa-facebook"></i>sign up via facebook</a>
+            <a class="btn color-3 btn-primary btn-lg btn-custom" role="button"><i class="fa fa-lock"></i>sign up now</a>
+        </p>
+    </div>
+    
     </div>
 
+    <user-list></user-list>
 
-</div>
-</div>   
 
-    <div class="footer">
-      <div class="container">
-						FOOTER
-      </div>
-    </div>
-</div>
 	<!-- Modal -->
-						<div id="userModal" class="modal fade" role="dialog">
-						<div class="modal-dialog">
+		<div id="userModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
 
-							<!-- Modal content-->
-							<div class="modal-content">
+					<!-- Modal content-->
+					<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 								
-								        
-    
-												<!-- Contenedor -->
+								     <!-- Contenedor -->
 											
-											<img class="modal-image" alt="userimg" src="http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png">
-											
-																						
-											<div class="username">
-												<h2>Bulma  <small><i class="fa fa-map-marker"></i> Earth (Capsule)</small></h2>
-												<p><i class="fa fa-briefcase"></i> Inventor.</p>
+                                    <img class="modal-image" alt="userimg" src="http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png" >
+                                    
+                                                                                
+                                    <div class="username">
+                                        <h2>Bulma  <small><i class="fa fa-map-marker"></i> Earth (Capsule)</small></h2>
+                                        <p><i class="fa fa-briefcase"></i> Inventor.</p>
+                                        
+                                        <a href="#"  class="btn-o"> <i class="fa fa-user-plus"></i> Add Friend </a>
+                                        <a href="#"  class="btn-o"> <i class="fa fa-plus"></i> Follow </a>
+                                    </div>
 												
-												<a href="#"  class="btn-o"> <i class="fa fa-user-plus"></i> Add Friend </a>
-												<a href="#"  class="btn-o"> <i class="fa fa-plus"></i> Follow </a>
-											</div>
-												
-											
-
-
-
-
 							</div>
 							<div class="modal-body">
+							
 								
-
 											<div class="panel panel-primary">
-												<div class="panel-heading">Info </div>
-											<div class="list-group">
-											
-											<a href="#about" class="list-group-item" data-toggle="collapse">About</a>
-												<div class="collapse list-group-submenu" id="about">
-													<a href="#"><i class="fa fa-calendar left-none"></i> Date of Birth : 03/09/1994</a>
-													<a href="#">Address : INDIA,Punjab</a>
-													<a href="mailto:gurdeepjawaddi94@gmail.com">Email : gurdeepjawaddi94@gmail.com</a>
-													<a href="#">Phone : +91 85680-79956</a>
-													
-												</div>
-									
-											<a href="#interest" class="list-group-item" data-toggle="collapse">Interests</a>
-												<div class="collapse list-group-submenu" id="interest">
-													<ul class="submenu">
-													<li><a href="#"><span class="tags">Adobe Photoshop</span> <span class="tags">Corel Draw</span> <span class="tags">CSS</span> <span class="tags">Css 3</span> 
-													<span class="tags">Graphic Design</span> <span class="tags">HTML</span> <span class="tags">HTML5</span> <span class="tags">JavaScript</span> 
-													<span class="tags">Twitter bootstrap</span> <span class="tags">bootstrap</span> <span class="tags">User Interface Design</span> <span class="tags">Wordpress</span></li></a>
-													</ul>
-												</div>
-											<a href="#" class="list-group-item">Porta ac consectetur ac</a>
-											<a href="#" class="list-group-item">Vestibulum at eros</a>
+												        <div class="panel-heading">Info </div>
+                                                        <div class="list-group">
+                                                    
+                                                        <a href="#about" class="list-group-item" data-toggle="collapse">About</a>
+                                                            <div class="collapse list-group-submenu" id="about">
+                                                                <a href="#"><i class="fa fa-calendar left-none"></i> Date of Birth : 03/09/1994</a>
+                                                                <a href="#">Address : INDIA,Punjab</a>
+                                                                <a href="mailto:gurdeepjawaddi94@gmail.com">Email : gurdeepjawaddi94@gmail.com</a>
+                                                                <a href="#">Phone : +91 85680-79956</a>
+                                                                
+                                                            </div>
+                                                
+                                                        <a href="#interest" class="list-group-item" data-toggle="collapse">Interests</a>
+                                                            <div class="collapse list-group-submenu" id="interest">
+                                                                <ul class="submenu">
+                                                                <li><a href="#"><span class="tags">Adobe Photoshop</span> <span class="tags">Corel Draw</span> <span class="tags">CSS</span> <span class="tags">Css 3</span> 
+                                                                <span class="tags">Graphic Design</span> <span class="tags">HTML</span> <span class="tags">HTML5</span> <span class="tags">JavaScript</span> 
+                                                                <span class="tags">Twitter bootstrap</span> <span class="tags">bootstrap</span> <span class="tags">User Interface Design</span> <span class="tags">Wordpress</span></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                                                            <a href="#" class="list-group-item">Vestibulum at eros</a>
+                                                        </div>
+                                                        
 											</div>
-											</div>
 
 
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							</div>
-							</div>
-
-						</div>
-						</div>
+							 </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      
+                                </div>
+                    </div>
+				</div>
+			</div>
   
   	<!-- Modules -->
-	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src='js/app/app.module.js'></script>
+    <script type="text/javascript" src='js/app/app.config.js'></script>
+    
+    <script type="text/javascript" src='js/app/nav-bar/nav-bar.module.js'></script>
+    <script type="text/javascript" src='js/app/nav-bar/nav-bar.component.js'></script>
+    
+    <script type="text/javascript" src='js/app/user-list/user-list.module.js'></script>
+    <script type="text/javascript" src='js/app/user-list/user-list.component.js'></script>
+    
 	 
 	<!-- Controllers -->
-	<script type="text/javascript" src="js/controllers/HomeController.js"></script>
+	
 	 
 	<!-- Services -->
   
