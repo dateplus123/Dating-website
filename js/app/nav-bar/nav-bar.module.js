@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('navBar', []);
+angular.module('navBar', ['firebase']);

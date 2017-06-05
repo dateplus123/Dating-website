@@ -25,10 +25,10 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <span class="user-avatar pull-left" style="margin-right:8px; margin-top:-5px;">
-                                        <img src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" class="img-responsive img-circle" title="John Doe" alt="John Doe" width="30px" height="30px">
+                                        <img src="{{ userImg }}" class="img-responsive img-circle" title="John Doe" alt="John Doe" width="30px" height="30px">
                                     </span>
                                     <span class="user-name">
-                                        John Doe
+                                        {{ user }}
                                     </span>
                                     <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
@@ -36,14 +36,14 @@
                                             <div class="navbar-content">
                                                 <div class="row">
                                                     <div class="col-md-5">
-                                                        <img src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" alt="Alternate Text" class="img-responsive" width="120px" height="120px" />
+                                                        <img src="{{ userImg }}" alt="Alternate Text" class="img-responsive" width="120px" height="120px" />
                                                         <p class="text-center small">
                                                             <a href="./3X6zm">Change Photo</a></p>
                                                     </div>
                                                     <div class="col-md-7">
-                                                        <span>John Doe</span>
+                                                        <span>{{ user }}</span>
                                                         <p class="text-muted small">
-                                                            example@pods.tld</p>
+                                                            {{ userEmail}}</p>
                                                         <div class="divider">
                                                         </div>
                                                         <a href="./56ExR" class="btn btn-default btn-xs"><i class="fa fa-user-o" aria-hidden="true"></i> Profile</a>
