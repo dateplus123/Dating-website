@@ -9,6 +9,9 @@ angular.module('dateSite').
                         when("/profile", {
                             templateUrl: 'templates/profile-user.html'
                         }).
+                        when("/login",{
+                            templateUrl: 'templates/login-page.html'
+                        }).
                         otherwise({
                             template: "<h1>hello</h1"
                         })
