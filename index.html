@@ -23,6 +23,24 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 
 
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+
+        <!-- AngularFire -->
+        <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+        <script>
+        // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBcHJlEQWjLoLechNPW1OjxvBNbDRnnC6o",
+                authDomain: "dating-website-b1f8a.firebaseapp.com",
+                databaseURL: "https://dating-website-b1f8a.firebaseio.com",
+                projectId: "dating-website-b1f8a",
+                storageBucket: "dating-website-b1f8a.appspot.com",
+                messagingSenderId: "389915529403"
+            };
+            firebase.initializeApp(config);
+        </script>
 	
 </head>
 
@@ -42,7 +60,7 @@
         
         <p>
             <a class="btn btn-primary btn-lg btn-custom" href="#" role="button"><i class="fa fa-facebook"></i>sign up via facebook</a>
-            <a class="btn color-3 btn-primary btn-lg btn-custom" role="button"><i class="fa fa-lock"></i>sign up now</a>
+            <a class="btn color-3 btn-primary btn-lg btn-custom"  role="button" data-toggle="modal" data-target="#loginModal"><i class="fa fa-lock"></i>sign up now</a>
         </p>
     </div>
     
@@ -50,69 +68,10 @@
 
     <user-list></user-list>
 
-
+    
 	<!-- Modal -->
-		<div id="userModal" class="modal fade" role="dialog">
-			<div class="modal-dialog">
-
-					<!-- Modal content-->
-					<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								
-								     <!-- Contenedor -->
-											
-                                    <img class="modal-image" alt="userimg" src="http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png" >
-                                    
-                                                                                
-                                    <div class="username">
-                                        <h2>Bulma  <small><i class="fa fa-map-marker"></i> Earth (Capsule)</small></h2>
-                                        <p><i class="fa fa-briefcase"></i> Inventor.</p>
-                                        
-                                        <a href="#"  class="btn-o"> <i class="fa fa-user-plus"></i> Add Friend </a>
-                                        <a href="#"  class="btn-o"> <i class="fa fa-plus"></i> Follow </a>
-                                    </div>
-												
-							</div>
-							<div class="modal-body">
-							
-								
-											<div class="panel panel-primary">
-												        <div class="panel-heading">Info </div>
-                                                        <div class="list-group">
-                                                    
-                                                        <a href="#about" class="list-group-item" data-toggle="collapse">About</a>
-                                                            <div class="collapse list-group-submenu" id="about">
-                                                                <a href="#"><i class="fa fa-calendar left-none"></i> Date of Birth : 03/09/1994</a>
-                                                                <a href="#">Address : INDIA,Punjab</a>
-                                                                <a href="mailto:gurdeepjawaddi94@gmail.com">Email : gurdeepjawaddi94@gmail.com</a>
-                                                                <a href="#">Phone : +91 85680-79956</a>
-                                                                
-                                                            </div>
-                                                
-                                                        <a href="#interest" class="list-group-item" data-toggle="collapse">Interests</a>
-                                                            <div class="collapse list-group-submenu" id="interest">
-                                                                <ul class="submenu">
-                                                                <li><a href="#"><span class="tags">Adobe Photoshop</span> <span class="tags">Corel Draw</span> <span class="tags">CSS</span> <span class="tags">Css 3</span> 
-                                                                <span class="tags">Graphic Design</span> <span class="tags">HTML</span> <span class="tags">HTML5</span> <span class="tags">JavaScript</span> 
-                                                                <span class="tags">Twitter bootstrap</span> <span class="tags">bootstrap</span> <span class="tags">User Interface Design</span> <span class="tags">Wordpress</span></a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                                                            <a href="#" class="list-group-item">Vestibulum at eros</a>
-                                                        </div>
-                                                        
-											</div>
-
-
-							 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      
-                                </div>
-                    </div>
-				</div>
-			</div>
+	<div ng-include="'templates/login-page.html'"></div>
+    <div ng-include="'templates/user-modal.html'"></div>	
   
   	<!-- Modules -->
 	<script type="text/javascript" src='js/app/app.module.js'></script>
@@ -123,6 +82,9 @@
     
     <script type="text/javascript" src='js/app/user-list/user-list.module.js'></script>
     <script type="text/javascript" src='js/app/user-list/user-list.component.js'></script>
+
+    <script type="text/javascript" src='js/app/login-page/login-page.module.js'></script>
+    <script type="text/javascript" src='js/app/login-page/login-page.component.js'></script>
     
 	 
 	<!-- Controllers -->
