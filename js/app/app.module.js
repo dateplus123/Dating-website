@@ -4,9 +4,11 @@ angular.module('dateSite', [
     // external
     'ngResource',
     'ngRoute',
+    'firebase',
     // internal
     'userList',
-     'navBar'
+     'navBar',
+     'loginPage'
      
      ]);
 

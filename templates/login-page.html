@@ -1,0 +1,28 @@
+
+    <div id="loginModal" class="modal fade" role="dialog" ng-controller="LoginPageController">
+        
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+
+
+        <div class="jumbotron" style="padding-bottom:0px;">
+            <h2>{{ name }}</h2>
+        </div>
+        <form class="form-signin" role="form">
+            <input type="email" class="form-control" placeholder="Email address" required="" autofocus="">
+            <input type="password" class="form-control" placeholder="Password" required="">
+            <label class="checkbox">
+                <a href="#"> Sign Up/>
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <button ng-click="signIn()" class="btn btn-lg btn-primary btn-block" type="submit">Sign Anonymously</button>
+        <button ng-click="googleSign()" class="btn btn-lg btn-primary btn-block" type="submit">Googley</button>
+      </form>
+        <p ng-if="firebaseUser">Signed in user: <strong>{{ firebaseUser.uid }}</strong></p>
+        <p ng-if="error">Error: <strong>{{ error }}</strong></p>
+        </div>
+            </div>
+    </div>
+    </div>
+   
