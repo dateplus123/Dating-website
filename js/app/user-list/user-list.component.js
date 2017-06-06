@@ -3,7 +3,7 @@
 angular.module('userList').
     component('userList',{
         templateUrl: 'templates/user-list.html' ,
-        controller: function($scope){
+        controller: function($scope, sharedProperties){
             
             $scope.people = [
                     {
@@ -97,6 +97,12 @@ angular.module('userList').
                     photoIndex: 0
                     }
                 ];
+
+                $scope.setUser = function(index){
+                    console.log($scope.people[index].photos[$scope.people[index].photoIndex]);
+                    $('#userModal').modal('show');
+                    sharedProperties.setUser($scope.people[index].name, $scope.people[index].photos[$scope.people[index].photoIndex]);
+                }
                     
         }
 

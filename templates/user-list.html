@@ -73,7 +73,7 @@
             <div class=" user-column col-lg-3 col-md-4 col-xs-12 "  ng-repeat="person in people">
                 <div class="user-box style-2">
                 <a class="ava-user style-2" href="#">
-                <img data-toggle="modal" data-target="#userModal" src="{{ person.photos[person.photoIndex] }}" alt=""/>
+                <img ng-click="setUser($index)" src="{{ person.photos[person.photoIndex] }}" alt=""/>
                 </a>
                     <div class="user-counter">
 

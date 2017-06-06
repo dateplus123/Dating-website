@@ -1,4 +1,4 @@
-<div id="userModal" class="modal fade" role="dialog">
+<div id="userModal" class="modal fade" role="dialog" ng-controller="UserModalController">
 			<div class="modal-dialog">
 
 					<!-- Modal content-->
@@ -8,11 +8,11 @@
 								
 								     <!-- Contenedor -->
 											
-                                    <img class="modal-image" alt="userimg" src="http://img12.deviantart.net/764d/i/2016/144/9/6/bulma__budokai_3__by_rayzorblade189-da3mkzv.png" >
+                                    <img class="modal-image" alt="userimg" src="{{userImage()}}" >
                                     
                                                                                 
                                     <div class="username">
-                                        <h2>Bulma  <small><i class="fa fa-map-marker"></i> Earth (Capsule)</small></h2>
+                                        <h2>{{ selectedUser() }} <small><i class="fa fa-map-marker"></i> Earth (Capsule)</small></h2>
                                         <p><i class="fa fa-briefcase"></i> Inventor.</p>
                                         
                                         <a href="#"  class="btn-o"> <i class="fa fa-user-plus"></i> Add Friend </a>
