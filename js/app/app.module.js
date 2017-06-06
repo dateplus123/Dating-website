@@ -8,7 +8,8 @@ angular.module('dateSite', [
     // internal
     'userList',
      'navBar',
-     'loginPage'
+     'loginPage',
+     'userModal',
      
      ]);
 
