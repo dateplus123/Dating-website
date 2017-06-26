@@ -16,14 +16,17 @@
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li><a href="#!profile">My Profile</a></li>
-                                <li><a href="#">My Activity</a></li>
+                                <li ng-if="user"><a href="#!profile">My Profile</a></li>
+                                
                                 <li><a href="#">Search People</a></li>
-                                <li><span class="badge badge-important">2</span><a href="#"><i class="fa fa-bell-o fa-lg" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a></li>
+                                <li ng-if="user"><span class="badge badge-important">2</span><a href="#"><i class="fa fa-bell-o fa-lg" aria-hidden="true"></i></a></li>
+                                <li ng-if="user"><a href="#"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a></li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                
+                                <span> <a class="btn color-3 btn-primary btn-sm btn-custom"  role="button" data-toggle="modal" data-target="#loginModal"><i class="fa fa-lock"></i>sign up now</a> </span>
+
+                                <li class="dropdown" ng-if="user"><a class="dropdown-toggle" data-toggle="dropdown">
                                     <span class="user-avatar pull-left" style="margin-right:8px; margin-top:-5px;">
                                         <img src="{{ userImg }}" class="img-responsive img-circle" title="John Doe" alt="John Doe" width="30px" height="30px">
                                     </span>
@@ -37,8 +40,7 @@
                                                 <div class="row">
                                                     <div class="col-md-5">
                                                         <img src="{{ userImg }}" alt="Alternate Text" class="img-responsive" width="120px" height="120px" />
-                                                        <p class="text-center small">
-                                                            <a href="./3X6zm">Change Photo</a></p>
+                                                        
                                                     </div>
                                                     <div class="col-md-7">
                                                         <span>{{ user }}</span>
@@ -49,7 +51,7 @@
                                                         <a href="./56ExR" class="btn btn-default btn-xs"><i class="fa fa-user-o" aria-hidden="true"></i> Profile</a>
                                                         <a href="#" class="btn btn-default btn-xs"><i class="fa fa-address-card-o" aria-hidden="true"></i> Contacts</a>
                                                         <a href="#" class="btn btn-default btn-xs"><i class="fa fa-cogs" aria-hidden="true"></i> Settings</a>
-                                                        <a href="#" class="btn btn-default btn-xs"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Help!</a>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -57,10 +59,11 @@
                                                 <div class="navbar-footer-content">
                                                     <div class="row">
                                                         <div class="col-md-6">
-                                                            <a href="#" class="btn btn-default btn-sm"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Change Passowrd</a>
+                                                            
                                                         </div>
                                                         <div class="col-md-6">
-                                                            <a href="#" class="btn btn-default btn-sm pull-right"><i class="fa fa-power-off" aria-hidden="true"></i> Sign Out</a>
+                                                            
+                                                            <a href="#" class="btn btn-default btn-sm pull-right" ng-click="signout()"><i class="fa fa-power-off" aria-hidden="true"></i> Sign Out</a>
                                                         </div>
                                                     </div>
                                                 </div>

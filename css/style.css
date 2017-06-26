@@ -288,3 +288,8 @@ a, .soc_buttons.light>li, .color_bg, .ava-user>img, .be-drop-down, .footer_slide
 .btn .fa {
     margin-right: 10px;
 }
+
+
+.profile-avatar{
+        width: 150px;
+}

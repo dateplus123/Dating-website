@@ -1,3 +1,19 @@
+ <div ng-if="user" id="content-box" class = "jumbotron" ng-if="logged">
+    
+    <div class = "container">
+        <h1>Welcome to Dating 123</h1>
+        <p>This is an example.</p>
+        
+        <p>
+            <a class="btn btn-primary btn-lg btn-custom" href="#" role="button"><i class="fa fa-facebook"></i>sign up via facebook</a>
+            <a class="btn color-3 btn-primary btn-lg btn-custom"  role="button" data-toggle="modal" data-target="#loginModal"><i class="fa fa-lock"></i>sign up now</a>
+        </p>
+    </div>
+    
+    </div>
+
+
+
 <div id="content-box">      
 <div class="container-fluid custom-container">
 <div class="row">
@@ -70,24 +86,23 @@
     <div class="col-md-10">
         <div class="row">
             <!-- PERSON BOX -->
-            <div class=" user-column col-lg-3 col-md-4 col-xs-12 "  ng-repeat="person in people">
+            <div class=" user-column col-lg-3 col-md-4 col-xs-12 "  ng-repeat="person in users track by $index">
                 <div class="user-box style-2">
                 <a class="ava-user style-2" href="#">
-                <img ng-click="setUser($index)" src="{{ person.photos[person.photoIndex] }}" alt=""/>
+                <img ng-click="setUser($index)" src="{{ person.photo }}" alt=""/>
                 </a>
                     <div class="user-counter">
 
                     <div class="c_text">{{person.city}}</div>
                     </div>
                 <a href="#" class="user-name" data-toggle="modal" data-target="#userModal">{{person.name}}</a>
-                <p class="user-info">Singapore, {{person.photoIndex}}</p>
+                
                     <div class="text-tags">
-                    <a href="#">Graphic Design</a>,
-                    <a href="#">Branding,</a>
-                    <a href="#">Typography</a>
+                    <a href="#" ng-repeat="hobbie in person.hobbies track by $index">{{hobbie}},</a>
+                    
                     </div>
                 <div class="info-box">
-                <span><i class="fa fa-thumbs-o-up"></i> 360</span>
+                <span><i class="fa fa-thumbs-o-up"></i> {{person.likes}}</span>
                 <span><i class="fa fa-eye"></i> 789</span>
                 </div>
                 <a class="btn btn-primary">Follow</a>
