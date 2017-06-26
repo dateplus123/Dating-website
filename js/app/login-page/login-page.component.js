@@ -3,7 +3,7 @@
 angular.module('loginPage')
     .controller('LoginPageController', function($scope, $firebaseAuth){
             
-            $scope.name = "Testing";
+            $scope.name = "Register to our WebPage";
 
             $scope.test = function(){
                 console.log("hello there");
@@ -38,7 +38,7 @@ angular.module('loginPage')
             };
             
 
-            
 
+            
         
     });
