@@ -10,6 +10,7 @@ angular.module('dateSite', [
      'navBar',
      'loginPage',
      'userModal',
+     'profileUser'
      
      ]);
 

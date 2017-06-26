@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('profileUser', []);
+angular.module('profileUser', ['firebase']);

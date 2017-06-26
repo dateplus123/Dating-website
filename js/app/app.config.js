@@ -7,7 +7,8 @@ angular.module('dateSite').
                 ){
                     $routeProvider.
                         when("/profile", {
-                            templateUrl: 'templates/profile-user.html'
+                            templateUrl: 'templates/profile-user.html',
+                            controller: 'UserProfileController'
                         }).
                         when("/login",{
                             templateUrl: 'templates/login-page.html'
@@ -20,9 +21,9 @@ angular.module('dateSite').
 
         });
 
-    
+
     angular.module('dateSite').service('sharedProperties', function() {
-    //NEED TO CHANGE THIS TO WORK WITH OBJECTS INSTEAD OF SINGLE VALUES
+        //NEED TO CHANGE THIS TO WORK WITH OBJECTS INSTEAD OF SINGLE VALUES
     var selectedUser = 'Test';
     var selectedPicUser = '';
     var objectValue = {
@@ -46,3 +47,6 @@ angular.module('dateSite').
         }
     }
 });
+
+
+
